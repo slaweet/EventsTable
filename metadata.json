@@ -1,1 +1,1 @@
-{"shell-version": ["3.2.1"], "uuid": "Alternative-EventsList@example.com", "name": "Alternative EventsList", "description": "Gnome-Shell extension that improves functionality of EventsList in Calendar Menu"}
+{"shell-version": ["3.2.1"], "uuid": "EventsTable@slaweet.cz", "name": "EventsTable", "description": "Replaces EventsList in GNOME Shell Calendar Menu with one showing events in a timetable."}

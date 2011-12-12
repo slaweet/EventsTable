@@ -1,0 +1,4 @@
+This extension replaces the original EventsList from the
+gnome-shell panel with a EventsTable that shows events
+in a grid as rectangles with height proportional to event 
+duration.

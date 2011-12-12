@@ -19,11 +19,11 @@ const UPowerGlib = imports.gi.UPowerGlib;
 // in org.gnome.desktop.interface
 const CLOCK_FORMAT_KEY        = 'clock-format';
 
-function EventsLists(eventSource) {
+function EventsTable(eventSource) {
     this._init(eventSource);
 }
 
-	EventsLists.prototype = {
+	EventsTable.prototype = {
     __proto__: Calendar.EventsList.prototype,
 
     _addTableEvent: function(eventBox, time, desc, duration) {
@@ -162,7 +162,7 @@ function disable() {
 	update();
 }
 function enable() {
-        Main.panel._dateMenu._eventList = new EventsLists(Main.panel._dateMenu._eventSource);
+        Main.panel._dateMenu._eventList = new EventsTable(Main.panel._dateMenu._eventSource);
 	update();
 }	   
 

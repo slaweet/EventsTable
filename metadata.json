@@ -1,1 +1,9 @@
-{"shell-version": ["3.2.1"], "uuid": "EventsTable@slaweet.cz", "name": "EventsTable", "description": "Replaces EventsList in GNOME Shell Calendar Menu with one showing events in a timetable."}
+{ 
+"shell-version": [
+    "3.2.1"
+  ], 
+"url": "https://github.com/slaweet/EventsTable",
+"uuid": "EventsTable@slaweet.cz", 
+"name": "EventsTable", 
+"description": "Replaces EventsList in GNOME Shell Calendar Menu with one showing events in a timetable."
+}

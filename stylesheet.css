@@ -1,19 +1,22 @@
-.events-period {
-    border: 1px solid #333333;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-}
 .events-line {
     height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .events-event-container {
     margin-left: 5px;
     border: 1px solid #333333;
     height: 16px;
+    width: 200px;
     background: rgba(0,0,0,0.8);
 }
-
+.events-period {
+    border: 1px solid #333333;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    height: 19px;
+}
 .events-table-box {
     border: 1px solid #333333;
 }
@@ -27,17 +30,26 @@
 .events-day-task-table {
     padding-left: 5px;
     padding-right: 5px;
+    height: 36px;
 }
 .events-day-time-table {
     padding-left: 5px;
+    text-align: left !important;
 }
 .events-day-dayname {
     padding-right: 5px;
     text-align: right;
 }
 
+.events-event-box {
+    min-width: auto;
+    width: auto;
+}
 .events-time-box {
     min-width: auto;
     color: #666666;
+}
+.events-allday-box {
+    padding-left: 30px;
 }
 

@@ -75,11 +75,10 @@ EventsTableExtension.prototype = {
         let clockFormat = this._desktopSettings.get_string(CLOCK_FORMAT_KEY);;
 
         let vbox = new St.BoxLayout( {vertical: true} );
-        if( this.actor.get_children().length == 0) {
-            this.hbox =  new St.BoxLayout();
-            this.actor.add(this.hbox, {expand: true});
+        if(this.actor.get_children().length == 0) {
+            this.actor.add(new St.BoxLayout(), {expand: true});
         }
-        this.hbox.add(vbox);
+        this.actor.get_children()[0].add(vbox);
 
         vbox.add(new St.Label({ style_class: 'events-day-header', text: header }));
         let allDayBox = new St.BoxLayout({style_class: 'events-allday-box'});
@@ -136,9 +135,10 @@ EventsTableExtension.prototype = {
         let list = this.eventList;
         if(list._originalAddPeriod)
             list._addPeriod = list._originalAddPeriod;
-        list._originalAddPeriod = undefined;
-        list._addTableEvent = undefined;
-        list._widthRatio = undefined;
+        delete list._originalAddPeriod;
+        delete list._addTableEvent;
+        delete list._widthRatio;
+        Calendar._update();
     },
 
     enable: function() {
